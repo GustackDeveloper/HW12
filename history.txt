@@ -1,0 +1,16 @@
+  237  echo "node_modules/" >> .gitignore\n
+  238  echo "# My New Repo" >> README.md\n
+  239  git checkout -b feature\n
+  240  git add .\ngit commit -m "Added README and updated .gitignore"\n
+  241  git push origin feature\n
+  242  git push origin feature\n
+  243  git commit --amend -m "Added README and updated .gitignore - ammend"\n
+  244  git push origin feature --force\n
+  245  git checkout main\n
+  246  git branch\n
+  247  git branch -r\n
+  248  git checkout -b main\n
+  249  git branch --unset-upstream
+  250  git checkout main\n
+  251  git merge feature\n
+  252  git push origin main\n
